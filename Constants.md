@@ -1,0 +1,7 @@
+If you are a developer writing custom Output Filters or your own types of Custom Fields, you may find it useful to rely on the following PHP constants
+
+  * **CCTM\_PATH** : full server path to the CCTM directory, useful for PHP includes, e.g. `/home/user/public_html/wp-content/plugins/custom-content-type-manager` -- does _not_ include a trailing slash!
+  * **CCTM\_URL** : full URL to CCTM directory, useful for Javascript or CSS includes. e.g. `http://yoursite.com/wp-content/plugins/custom-content-type-manager` -- does not include a trailing slash.
+  * **CCTM\_3P\_PATH** : full server path to the third party directory. This is what 3rd party developers can use to include PHP files from their custom Output Filters or field types.  E.g. `/home/user/public_html/wp-content/uploads/cctm` -- does _not_ include a trailing slash!
+  * **CCTM\_3P\_URL** : URL to the third party directory.  This is useful for developers of custom fields and custom output filters.  E.g. `http://yoursite.com/wp-content/uploads/cctm` -- does _not_ include a trailing slash!
+  * **CCTM\_DEBUG** : full path to a file to be used for logging.  I developed this for internal use, especially for checking the status of Ajax requests.  If set, messages will be written to this file.
